@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MyFirstApp';
+  val:number=100;
+  status:string="ganpati";
+
+  buttonstatus=false;
+  buttonmessage=" ";
+  constructor(){
+    setTimeout(()=>{
+      this.buttonstatus=true;
+
+    },5000);
+  }
+  onclickButton(event:Event){
+    this.buttonmessage="welcome amgular js 7 to beginner";
+
+  }
 }
